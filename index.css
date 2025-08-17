@@ -22,6 +22,8 @@ body {
     border-radius: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
+    min-height: 100vh;
+    position: relative;
 }
 
 /* Header */
@@ -181,28 +183,62 @@ footer p {
         border-radius: 8px;
     }
     
+    header {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+    
     header h1 {
         font-size: 2rem;
+        line-height: 1.2;
     }
     
     header h2 {
         font-size: 1.5rem;
     }
     
+    .section {
+        margin-bottom: 25px;
+        padding: 15px 0;
+    }
+    
     .section h3 {
         font-size: 1.3rem;
+        margin-bottom: 15px;
     }
     
     .subsection {
         margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .subsection h4 {
+        font-size: 1.1rem;
     }
     
     .intro {
         padding: 20px;
+        margin-bottom: 25px;
     }
     
     ul {
         margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    
+    li {
+        margin-bottom: 6px;
+        line-height: 1.4;
+    }
+    
+    p {
+        text-align: left;
+        margin-bottom: 12px;
+    }
+    
+    .back-to-top {
+        padding: 10px 16px;
+        font-size: 0.85rem;
     }
 }
 
@@ -212,20 +248,80 @@ footer p {
         padding: 12px;
     }
     
+    header {
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+    
     header h1 {
         font-size: 1.8rem;
+        line-height: 1.1;
+        margin-bottom: 8px;
     }
     
     header h2 {
         font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    .section {
+        margin-bottom: 20px;
+        padding: 10px 0;
+    }
+    
+    .section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .subsection {
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+    
+    .subsection h4 {
+        font-size: 1rem;
+        margin-bottom: 8px;
     }
     
     .intro {
         padding: 15px;
+        margin-bottom: 20px;
     }
     
     .intro p {
         font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    ul {
+        margin-left: 10px;
+        margin-bottom: 12px;
+    }
+    
+    li {
+        margin-bottom: 5px;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+    
+    p {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+    
+    .back-to-top {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+    
+    footer {
+        padding-top: 20px;
+    }
+    
+    .last-updated {
+        font-size: 0.8rem;
     }
 }
 
