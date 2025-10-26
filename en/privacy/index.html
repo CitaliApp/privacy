@@ -27,8 +27,9 @@
                 <div class="subsection">
                     <h4>1.1 Personal Information</h4>
                     <ul>
-                        <li><strong>Registration data:</strong> Email address, full name, and date of birth</li>
+                        <li><strong>Registration data:</strong> Email address, full name, date of birth, and phone number</li>
                         <li><strong>Contact information:</strong> Phone number and email address</li>
+                        <li><strong>Google Authentication:</strong> When you use Google Sign-In, we collect your name and email from your Google account through Firebase Authentication</li>
                     </ul>
                 </div>
 
@@ -48,6 +49,8 @@
                         <li>Unique device identifier</li>
                         <li>Push notification token</li>
                         <li>Application settings</li>
+                        <li>Firebase authentication information (session tokens, unique user identifiers)</li>
+                        <li>Google authentication data (when using Google Sign-In)</li>
                     </ul>
                 </div>
             </section>
@@ -57,6 +60,9 @@
                 <p>We use your personal information solely to:</p>
                 <ul>
                     <li>Facilitate booking and appointment management</li>
+                    <li>Verify your identity and age for service usage (when date of birth is provided)</li>
+                    <li>Contact you about your bookings and services (when phone number is provided)</li>
+                    <li>Authenticate your access to the application through Firebase Authentication and Google Sign-In</li>
                     <li>Improve the user experience in the application</li>
                     <li>Send notifications about your bookings</li>
                     <li>Provide technical support when necessary</li>
@@ -90,6 +96,7 @@
                 <ul>
                     <li><strong>Complete encryption:</strong> Data encrypted in transit (HTTPS) and at rest</li>
                     <li><strong>Protected passwords:</strong> Passwords are completely encrypted. Citali cannot access them, only Firebase allows the user to change them when requested</li>
+                    <li><strong>Secure Google Authentication:</strong> Google Sign-In uses OAuth 2.0 and OpenID Connect for secure authentication without sharing passwords</li>
                     <li><strong>International certifications:</strong> ISO 27001, SOC 1, SOC 2 and SOC 3</li>
                     <li><strong>Restricted access:</strong> Only authorized employees with two-factor authentication</li>
                     <li><strong>Regulatory compliance:</strong> Compatible with GDPR, CCPA and international privacy frameworks</li>
@@ -102,6 +109,8 @@
                 <p>We do not sell, rent, or share your personal information with third parties, except:</p>
                 <ul>
                     <li>With establishments where you make bookings (only your name, email address, and phone number)</li>
+                    <li>With Google, when you use Google Sign-In, according to Google's terms of service and privacy policy</li>
+                    <li>With Firebase (Google Cloud Platform) for secure processing and storage of authentication data</li>
                 </ul>
             </section>
 
@@ -111,12 +120,12 @@
                 
                 <div class="subsection">
                     <h4>6.1 Account Data</h4>
-                    <p>Registration data (name, email, phone) is retained while the account is active. If you delete your account, this data is immediately deleted.</p>
+                    <p>Registration data (name, email, phone, date of birth) is retained while the account is active. If you delete your account, this data is immediately deleted. Google authentication data is deleted according to Firebase Authentication retention policies.</p>
                 </div>
                 
                 <div class="subsection">
                     <h4>6.2 Booking Data</h4>
-                    <p>Appointments and bookings are automatically deleted after the established date to optimize database performance and reduce unnecessary data storage.</p>
+                    <p>Appointments and bookings are retained while your account is active and are only deleted when you choose to delete your account. You can access and view your complete booking history at any time through the application.</p>
                 </div>
                 
                 <div class="subsection">
@@ -141,7 +150,7 @@
                 <h3>8. Your rights</h3>
                 <p>Data subjects may exercise the following rights at any time and free of charge:</p>
                 <ul>
-                    <li><strong>Access</strong> your personal information</li>
+                    <li><strong>Access</strong> your personal information and view your complete booking history</li>
                     <li><strong>Modify</strong> your profile data</li>
                     <li><strong>Delete</strong> your account and associated data</li>
                     <li><strong>Control</strong> the notifications you receive and your integration with the device calendar</li>
@@ -158,6 +167,7 @@
             <section class="section">
                 <h3>10. Data accuracy</h3>
                 <p>The user guarantees that the data provided is true, accurate, complete, and up-to-date, undertaking to report any changes. They will be responsible for any damage that may be caused by non-compliance with this obligation.</p>
+                <p><strong>Optional fields:</strong> Date of birth and phone number are optional fields that enhance your experience when provided. The accuracy of this data is important for proper service delivery when you choose to share it.</p>
                 <p>If you provide third-party data, you declare that you have the consent of the interested parties.</p>
             </section>
 
@@ -180,7 +190,7 @@
         </main>
         
         <footer class="footer">
-            <p class="last-updated">Last updated: August 17, 2025</p>
+            <p class="last-updated">Last updated: October 26, 2025</p>
         </footer>
     </div>
 </body>
